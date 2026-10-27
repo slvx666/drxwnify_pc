@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="desktop/src/main/resources/icon.png" width="120" alt="Drxwnify" />
+<img src="src/main/resources/icon.png" width="120" alt="Drxwnify" />
 
 # Drxwnify для ПК <sup>beta</sup>
 
@@ -56,15 +56,11 @@
 
 ## 🛠 Сборка из исходников
 
-Приложение использует общие модули Android-версии, поэтому собирается внутри её репозитория:
-
 ```bash
-git clone https://github.com/slvx666/DRXWNIFY.git
 git clone https://github.com/slvx666/drxwnify_pc.git
-cp -r drxwnify_pc/desktop DRXWNIFY/desktop
-cd DRXWNIFY/desktop
-../gradlew -p . run                  # запустить
-../gradlew -p . packageMsi           # собрать установщик (Gradle сам скачает JDK и WiX)
+cd drxwnify_pc
+./gradlew run                  # запустить
+./gradlew packageMsi           # собрать установщик (Gradle сам скачает JDK и WiX)
 ```
 
 ---
